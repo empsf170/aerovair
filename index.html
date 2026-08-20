@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AEROVAIR | Beyond Every Horizon</title>
+    <meta name="description"
+        content="Discover a smarter way to travel with AEROVAIR. Experience premium comfort, seamless connections, and exceptional service worldwide.">
+    <link rel="canonical" href="https://www.aerovair.com/">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Manrope:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header class="site-header">
+        <!-- Top Utility Bar -->
+        <div class="utility-bar d-none d-xl-block">
+            <div class="container-fluid px-4 px-lg-5">
+                <div class="d-flex justify-content-end align-items-center gap-4">
+                    <a href="help.html" class="utility-link">Help</a>
+                    <div class="utility-dropdown">
+                        <span>EN <svg width="10" height="6" viewBox="0 0 10 6" fill="none">
+                                <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg></span>
+                    </div>
+                    <div class="utility-dropdown">
+                        <span>USD <svg width="10" height="6" viewBox="0 0 10 6" fill="none">
+                                <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Navigation -->
+        <nav class="main-navigation">
+            <div class="container-fluid px-4 px-lg-5">
+                <div class="d-flex justify-content-between align-items-center nav-container">
+                    <!-- Logo -->
+                    <a href="index.html" class="brand-logo d-flex align-items-center gap-2">
+                        <img src="assets/icons/favicon.svg" alt="AEROVAIR Logo Icon" width="32" height="32"
+                            class="brand-icon">
+                        <span class="logo-text">AEROVAIR</span>
+                    </a>
+
+                    <!-- Desktop Links -->
+                    <div class="desktop-menu d-none d-xl-flex">
+                        <a href="index.html" class="nav-link active">Home</a>
+                        <a href="about.html" class="nav-link">About</a>
+                        <a href="destinations.html" class="nav-link">Destinations</a>
+                        <a href="experience.html" class="nav-link">Experience</a>
+                        <a href="offers.html" class="nav-link">Offers</a>
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </div>
+
+                    <!-- Right Actions -->
+                    <div class="nav-actions d-none d-xl-flex align-items-center gap-3">
+                        <button class="icon-btn" aria-label="Search">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <circle cx="11" cy="11" r="8" />
+                                <path d="M21 21l-4.35-4.35" />
+                            </svg>
+                        </button>
+                        <a href="book.html" class="btn-premium btn-premium-primary">Book a Flight</a>
+                    </div>
+
+                    <!-- Mobile Menu Toggle -->
+                    <button class="mobile-menu-toggle d-xl-none" aria-label="Toggle menu">
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-wrapper">
+        <button class="mobile-menu-close btn-close position-absolute top-0 end-0 m-4 fs-1" aria-label="Close menu"></button>
+        <div class="mobile-menu-inner">
+            <a href="index.html" class="mobile-nav-link">Home</a>
+            <a href="about.html" class="mobile-nav-link">About</a>
+            <a href="destinations.html" class="mobile-nav-link">Destinations</a>
+            <a href="experience.html" class="mobile-nav-link">Experience</a>
+            <a href="offers.html" class="mobile-nav-link">Offers</a>
+            <a href="contact.html" class="mobile-nav-link">Contact</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <!-- Placeholder high-res aviation background -->
+        <div class="hero-bg" style="background-image: url('assets/images/home-hero.avif');"></div>
+        <div class="hero-overlay"></div>
+
+        <div class="container position-relative hero-content-wrapper">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8 col-xl-7">
+                    <h1 class="hero-title animate-on-scroll mx-auto">Beyond Every Horizon</h1>
+                    <p class="hero-subtitle animate-on-scroll mx-auto">Discover a smarter way to travel with premium
+                        comfort, seamless connections, and exceptional service.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Flight Search Widget -->
+    <section class="booking-widget-section">
+        <div class="container">
+            <div class="booking-widget">
+                <div class="booking-tabs">
+                    <button class="tab-btn active">Round Trip</button>
+                    <button class="tab-btn">One Way</button>
+                    <button class="tab-btn">Multi-City</button>
+                </div>
+                <form class="booking-form">
+                    <div class="row g-3">
+                        <div class="col-md-6 col-xl-3 position-relative">
+                            <label class="form-label">From</label>
+                            <input type="text" class="form-control premium-input" placeholder="Origin city or airport">
+                            <button type="button" class="swap-btn" aria-label="Swap Origin and Destination">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M7 16V4M7 4L3 8M7 4L11 8M17 8v12M17 20l-4-4M17 20l4-4" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="col-md-6 col-xl-3">
+                            <label class="form-label">To</label>
+                            <input type="text" class="form-control premium-input"
+                                placeholder="Destination city or airport">
+                        </div>
+                        <div class="col-md-6 col-xl-3">
+                            <label class="form-label">Departure - Return</label>
+                            <input type="text" class="form-control premium-input" placeholder="Select dates">
+                        </div>
+                        <div class="col-md-6 col-xl-3">
+                            <label class="form-label">Passengers & Class</label>
+                            <select class="form-select premium-input">
+                                <option>1 Passenger, Economy</option>
+                                <option>1 Passenger, Premium Economy</option>
+                                <option>1 Passenger, Business</option>
+                                <option>1 Passenger, First</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-end mt-4">
+                        <button type="submit" class="btn-premium btn-premium-primary search-flights-btn">Search
+                            Flights</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Access Section -->
+    <section class="quick-access-section py-5 bg-surface">
+        <div class="container">
+            <div class="row g-4 text-center justify-content-center">
+                <div class="col-12 col-md-6 col-xl-3">
+                    <a href="#" class="quick-access-card animate-on-scroll">
+                        <div class="qa-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <circle cx="12" cy="12" r="10" />
+                                <polyline points="12 6 12 12 16 14" />
+                            </svg>
+                        </div>
+                        <span class="qa-title">Our Cabins</span>
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3">
+                    <a href="#" class="quick-access-card animate-on-scroll">
+                        <div class="qa-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                                <polyline points="14 2 14 8 20 8" />
+                                <line x1="16" y1="13" x2="8" y2="13" />
+                                <line x1="16" y1="17" x2="8" y2="17" />
+                                <polyline points="10 9 9 9 8 9" />
+                            </svg>
+                        </div>
+                        <span class="qa-title">Latest Offers</span>
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3">
+                    <a href="#" class="quick-access-card animate-on-scroll">
+                        <div class="qa-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                                <polyline points="22 4 12 14.01 9 11.01" />
+                            </svg>
+                        </div>
+                        <span class="qa-title">Our Story</span>
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3">
+                    <a href="#" class="quick-access-card animate-on-scroll">
+                        <div class="qa-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <circle cx="12" cy="12" r="10" />
+                                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+                                <line x1="12" y1="17" x2="12.01" y2="17" />
+                            </svg>
+                        </div>
+                        <span class="qa-title">Travel Requirements</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Destinations -->
+    <section class="destinations-section section-padding">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-end mb-5">
+                <div>
+                    <span
+                        class="text-accent text-uppercase letter-spacing-1 small font-weight-bold d-block mb-2 animate-on-scroll">Discover</span>
+                    <h2 class="display-5 mb-0 animate-on-scroll">Featured Destinations</h2>
+                </div>
+                <a href="destinations.html"
+                    class="btn-premium btn-premium-outline d-none d-md-inline-flex animate-on-scroll">View All</a>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+                <!-- Destination 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <a href="#" class="destination-card animate-on-scroll">
+                        <div class="dest-image">
+                            <img src="assets/images/destination1.jpg" alt="London" loading="lazy">
+                            <div class="dest-overlay"></div>
+                        </div>
+                        <div class="dest-content">
+                            <div class="d-flex justify-content-between align-items-end">
+                                <div>
+                                    <span class="dest-code">LHR</span>
+                                    <h3 class="dest-city">London</h3>
+                                    <span class="dest-country">United Kingdom</span>
+                                </div>
+                                <div class="text-end">
+                                    <span class="dest-price-label">From</span>
+                                    <span class="dest-price">$650</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- Destination 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <a href="#" class="destination-card animate-on-scroll">
+                        <div class="dest-image">
+                            <img src="assets/images/destination2.jpg" alt="Dubai" loading="lazy">
+                            <div class="dest-overlay"></div>
+                        </div>
+                        <div class="dest-content">
+                            <div class="d-flex justify-content-between align-items-end">
+                                <div>
+                                    <span class="dest-code">DXB</span>
+                                    <h3 class="dest-city">Dubai</h3>
+                                    <span class="dest-country">United Arab Emirates</span>
+                                </div>
+                                <div class="text-end">
+                                    <span class="dest-price-label">From</span>
+                                    <span class="dest-price">$890</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- Destination 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <a href="#" class="destination-card animate-on-scroll">
+                        <div class="dest-image">
+                            <img src="assets/images/destination3.jpg" alt="Singapore" loading="lazy">
+                            <div class="dest-overlay"></div>
+                        </div>
+                        <div class="dest-content">
+                            <div class="d-flex justify-content-between align-items-end">
+                                <div>
+                                    <span class="dest-code">SIN</span>
+                                    <h3 class="dest-city">Singapore</h3>
+                                    <span class="dest-country">Singapore</span>
+                                </div>
+                                <div class="text-end">
+                                    <span class="dest-price-label">From</span>
+                                    <span class="dest-price">$950</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="text-center mt-5 d-md-none">
+                <a href="destinations.html" class="btn-premium btn-premium-outline">View All</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why AEROVAIR -->
+    <section class="why-us-section section-padding bg-surface">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-xl-6 order-2 order-xl-1 text-center">
+                    <div class="why-us-image-wrapper animate-on-scroll d-inline-block mx-auto">
+                        <img src="assets/images/journey.jpg" alt="Premium cabin crew service"
+                            class="img-fluid rounded-3" loading="lazy">
+                    </div>
+                </div>
+                <div class="col-xl-6 order-1 order-xl-2">
+
+                    <h2 class="display-4 mb-4 animate-on-scroll">Designed Around Your Journey</h2>
+                    <p class="text-muted mb-4 animate-on-scroll">From the moment you book until you arrive at your
+                        destination, we anticipate your needs. Experience the perfect harmony of modern aviation
+                        technology and timeless hospitality.</p>
+
+                    <ul class="why-us-list list-unstyled animate-on-scroll">
+                        <li class="mb-3 d-flex align-items-start">
+                            <div class="text-accent me-3 mt-1">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                                    <polyline points="22 4 12 14.01 9 11.01" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h5 class="mb-1">Exceptional Comfort</h5>
+                                <p class="text-muted small mb-0">Spacious seating and refined cabin environments
+                                    designed for relaxation.</p>
+                            </div>
+                        </li>
+                        <li class="mb-3 d-flex align-items-start">
+                            <div class="text-accent me-3 mt-1">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                                    <polyline points="22 4 12 14.01 9 11.01" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h5 class="mb-1">Modern Fleet</h5>
+                                <p class="text-muted small mb-0">Fly on some of the world's most advanced and
+                                    sustainable aircraft.</p>
+                            </div>
+                        </li>
+                        <li class="d-flex align-items-start">
+                            <div class="text-accent me-3 mt-1">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                                    <polyline points="22 4 12 14.01 9 11.01" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h5 class="mb-1">Dedicated Service</h5>
+                                <p class="text-muted small mb-0">Our award-winning crew is committed to providing
+                                    personalized care.</p>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <a href="about.html" class="btn-premium btn-premium-primary mt-4 animate-on-scroll">Our Story</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Travel Experience (Cabin Classes) -->
+    <section class="experience-section section-padding">
+        <div class="container">
+            <div class="text-center max-w-700 mx-auto mb-5">
+                <span
+                    class="text-accent text-uppercase letter-spacing-1 small font-weight-bold d-block mb-2 animate-on-scroll">Cabin
+                    Classes</span>
+                <h2 class="display-5 mb-3 animate-on-scroll">Elevate Your Travel Experience</h2>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-6 col-xl-3">
+                    <div class="cabin-card animate-on-scroll">
+                        <div class="cabin-img">
+                            <img src="assets/images/class1.jpg" alt="Economy Class" loading="lazy">
+                        </div>
+                        <div class="cabin-content text-center">
+                            <h4>Economy</h4>
+                            <p class="text-muted small">Comfortable seats, entertainment and thoughtful service.</p>
+                            <a href="experience.html" class="cabin-link">Explore Economy</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3">
+                    <div class="cabin-card animate-on-scroll" style="transition-delay: 0.1s;">
+                        <div class="cabin-img">
+                            <img src="assets/images/class2.jpg" alt="Premium Economy" loading="lazy">
+                        </div>
+                        <div class="cabin-content text-center">
+                            <h4>Premium Economy</h4>
+                            <p class="text-muted small">More space, enhanced dining and priority benefits.</p>
+                            <a href="experience.html" class="cabin-link">Explore Premium</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3">
+                    <div class="cabin-card animate-on-scroll" style="transition-delay: 0.2s;">
+                        <div class="cabin-img">
+                            <img src="assets/images/class3.jpg" alt="Business Class" loading="lazy">
+                        </div>
+                        <div class="cabin-content text-center">
+                            <h4>Business Class</h4>
+                            <p class="text-muted small">Lie-flat seating, lounge access and premium dining.</p>
+                            <a href="experience.html" class="cabin-link">Explore Business</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3">
+                    <div class="cabin-card animate-on-scroll" style="transition-delay: 0.3s;">
+                        <div class="cabin-img">
+                            <img src="assets/images/class4.jpg" alt="First Class" loading="lazy">
+                        </div>
+                        <div class="cabin-content text-center">
+                            <h4>First Class</h4>
+                            <p class="text-muted small">Private suites, personalized service and exclusive amenities.
+                            </p>
+                            <a href="experience.html" class="cabin-link">Explore First Class</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer bg-surface pt-5 pb-3">
+        <div class="container pt-4">
+            <div class="row g-5 mb-5">
+                <!-- Column 1 -->
+                <div class="col-12 col-md-6 col-lg-4 pe-lg-5">
+                    <a href="index.html" class="d-inline-block mb-3 brand-logo d-flex align-items-center gap-2">
+                        <img src="assets/icons/favicon.svg" alt="AEROVAIR Logo Icon" width="32" height="32"
+                            class="brand-icon">
+                        <span class="logo-text text-primary">AEROVAIR</span>
+                    </a>
+                    <p class="text-muted small mb-4">Beyond Every Horizon. Discover a smarter way to travel with premium
+                        comfort, seamless connections, and exceptional service.</p>
+                    <div class="social-links d-flex gap-3">
+                        <a href="#" aria-label="Facebook"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                            </svg></a>
+                        <a href="#" aria-label="X"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                            </svg></a>
+                        <a href="#" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                            </svg></a>
+                        <a href="#" aria-label="LinkedIn"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                <rect x="2" y="9" width="4" height="12" />
+                                <circle cx="4" cy="4" r="2" />
+                            </svg></a>
+                    </div>
+                </div>
+
+                <!-- Column 2 -->
+                <div class="col-12 col-md-6 col-lg-2">
+                    <h5 class="mb-4 footer-title">Travel</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="help.html#baggage">Baggage</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3 -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h5 class="mb-4 footer-title">Experience</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="experience.html">Cabins</a></li>
+                        <li><a href="lounges.html">Lounges</a></li>
+                        <li><a href="experience.html#dining">Dining</a></li>
+                        <li><a href="experience.html#entertainment">Entertainment</a></li>
+                        <li><a href="fleet.html">Fleet</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4 -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h5 class="mb-4 footer-title">Support</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="help.html#requirements">Travel Requirements</a></li>
+                        <li><a href="help.html">Help Center</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-top border-border pt-4 mt-4 text-center text-md-start">
+                <div class="row align-items-center">
+                    <div class="col-md-6 mb-3 mb-md-0">
+                        <p class="small text-muted mb-0">&copy; 2026 AEROVAIR Airlines. All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <div
+                            class="d-inline-flex flex-wrap gap-3 small opacity-75 footer-bottom-links justify-content-center justify-content-md-end">
+                            <!-- Removed links per user request -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTopBtn" aria-label="Scroll to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 15l-6-6-6 6" />
+        </svg>
+    </button>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
+

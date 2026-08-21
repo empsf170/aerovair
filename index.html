@@ -30,27 +30,6 @@
 
     <!-- Header Section -->
     <header class="site-header">
-        <!-- Top Utility Bar -->
-        <div class="utility-bar d-none d-xl-block">
-            <div class="container-fluid px-4 px-lg-5">
-                <div class="d-flex justify-content-end align-items-center gap-4">
-                    <a href="help.html" class="utility-link">Help</a>
-                    <div class="utility-dropdown">
-                        <span>EN <svg width="10" height="6" viewBox="0 0 10 6" fill="none">
-                                <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                            </svg></span>
-                    </div>
-                    <div class="utility-dropdown">
-                        <span>USD <svg width="10" height="6" viewBox="0 0 10 6" fill="none">
-                                <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                            </svg></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
         <!-- Main Navigation -->
         <nav class="main-navigation">
             <div class="container-fluid px-4 px-lg-5">
@@ -74,13 +53,7 @@
 
                     <!-- Right Actions -->
                     <div class="nav-actions d-none d-xl-flex align-items-center gap-3">
-                        <button class="icon-btn" aria-label="Search">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2">
-                                <circle cx="11" cy="11" r="8" />
-                                <path d="M21 21l-4.35-4.35" />
-                            </svg>
-                        </button>
+                        
                         <a href="book.html" class="btn-premium btn-premium-primary">Book a Flight</a>
                     </div>
 
@@ -99,12 +72,13 @@
     <div class="mobile-menu-wrapper">
         <button class="mobile-menu-close btn-close position-absolute top-0 end-0 m-4 fs-1" aria-label="Close menu"></button>
         <div class="mobile-menu-inner">
-            <a href="index.html" class="mobile-nav-link">Home</a>
+            <a href="index.html" class="mobile-nav-link active">Home</a>
             <a href="about.html" class="mobile-nav-link">About</a>
             <a href="destinations.html" class="mobile-nav-link">Destinations</a>
             <a href="experience.html" class="mobile-nav-link">Experience</a>
             <a href="offers.html" class="mobile-nav-link">Offers</a>
             <a href="contact.html" class="mobile-nav-link">Contact</a>
+            <a href="book.html" class="btn-premium btn-premium-primary mt-4 w-100 text-center" style="display: block; max-width: 200px; margin: 0 auto;">Book a Flight</a>
         </div>
     </div>
 
@@ -153,7 +127,7 @@
                         </div>
                         <div class="col-md-6 col-xl-3">
                             <label class="form-label">Departure - Return</label>
-                            <input type="text" class="form-control premium-input" placeholder="Select dates">
+                            <input type="date" onclick="this.showPicker()" class="form-control premium-input" placeholder="Select dates">
                         </div>
                         <div class="col-md-6 col-xl-3">
                             <label class="form-label">Passengers & Class</label>
@@ -180,53 +154,25 @@
             <div class="row g-4 text-center justify-content-center">
                 <div class="col-12 col-md-6 col-xl-3">
                     <a href="#" class="quick-access-card animate-on-scroll">
-                        <div class="qa-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2">
-                                <circle cx="12" cy="12" r="10" />
-                                <polyline points="12 6 12 12 16 14" />
-                            </svg>
-                        </div>
+                        <div class="qa-icon" style="overflow: hidden; padding: 0; background: none; border: none; box-shadow: none;"><img src="assets/images/class1.jpg" alt="Our Cabins" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;"></div>
                         <span class="qa-title">Our Cabins</span>
                     </a>
                 </div>
                 <div class="col-12 col-md-6 col-xl-3">
                     <a href="#" class="quick-access-card animate-on-scroll">
-                        <div class="qa-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2">
-                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
-                                <polyline points="14 2 14 8 20 8" />
-                                <line x1="16" y1="13" x2="8" y2="13" />
-                                <line x1="16" y1="17" x2="8" y2="17" />
-                                <polyline points="10 9 9 9 8 9" />
-                            </svg>
-                        </div>
+                        <div class="qa-icon" style="overflow: hidden; padding: 0; background: none; border: none; box-shadow: none;"><img src="assets/images/escapes.jpg" alt="Latest Offers" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;"></div>
                         <span class="qa-title">Latest Offers</span>
                     </a>
                 </div>
                 <div class="col-12 col-md-6 col-xl-3">
                     <a href="#" class="quick-access-card animate-on-scroll">
-                        <div class="qa-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2">
-                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
-                                <polyline points="22 4 12 14.01 9 11.01" />
-                            </svg>
-                        </div>
+                        <div class="qa-icon" style="overflow: hidden; padding: 0; background: none; border: none; box-shadow: none;"><img src="assets/images/story.jpg" alt="Our Story" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;"></div>
                         <span class="qa-title">Our Story</span>
                     </a>
                 </div>
                 <div class="col-12 col-md-6 col-xl-3">
                     <a href="#" class="quick-access-card animate-on-scroll">
-                        <div class="qa-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2">
-                                <circle cx="12" cy="12" r="10" />
-                                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
-                                <line x1="12" y1="17" x2="12.01" y2="17" />
-                            </svg>
-                        </div>
+                        <div class="qa-icon" style="overflow: hidden; padding: 0; background: none; border: none; box-shadow: none;"><img src="assets/images/journey.jpg" alt="Travel Requirements" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;"></div>
                         <span class="qa-title">Travel Requirements</span>
                     </a>
                 </div>
@@ -244,7 +190,7 @@
                     <h2 class="display-5 mb-0 animate-on-scroll">Featured Destinations</h2>
                 </div>
                 <a href="destinations.html"
-                    class="btn-premium btn-premium-outline d-none d-md-inline-flex animate-on-scroll">View All</a>
+                    class="btn-premium btn-premium-primary d-inline-flex animate-on-scroll">View All</a>
             </div>
 
             <div class="row g-4 justify-content-center">
@@ -315,9 +261,7 @@
                     </a>
                 </div>
             </div>
-            <div class="text-center mt-5 d-md-none">
-                <a href="destinations.html" class="btn-premium btn-premium-outline">View All</a>
-            </div>
+            
         </div>
     </section>
 

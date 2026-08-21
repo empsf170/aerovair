@@ -80,4 +80,43 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
+
+
+    // --- Booking Widget Tabs (Index Page) ---
+    const bookingTabs = document.querySelectorAll('.booking-tabs .tab-btn');
+    if (bookingTabs.length > 0) {
+        bookingTabs.forEach(tab => {
+            tab.addEventListener('click', function(e) {
+                e.preventDefault();
+                bookingTabs.forEach(t => t.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+    }
+
+    // --- Offers Filter Tabs (Offers Page) ---
+    const offerTabs = document.querySelectorAll('.bg-surface.rounded-pill button');
+    const offerCards = document.querySelectorAll('.offer-card');
+    if (offerTabs.length > 0) {
+        offerTabs.forEach(tab => {
+            tab.addEventListener('click', function(e) {
+                e.preventDefault();
+                offerTabs.forEach(t => {
+                    t.classList.remove('btn-primary', 'text-white');
+                    t.classList.add('btn-link', 'text-muted');
+                });
+                this.classList.remove('btn-link', 'text-muted');
+                this.classList.add('btn-primary', 'text-white');
+                
+                const filter = this.textContent.trim();
+                offerCards.forEach(card => {
+                    if (filter === 'All Offers' || card.getAttribute('data-category') === filter) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+    }
 });

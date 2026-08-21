@@ -816,3 +816,42 @@ body.no-scroll {
     background-color: var(--color-accent) !important;
     color: #17212B !important;
 }
+
+.qa-icon {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    margin: 0 auto 0.75rem auto;
+    transition: color var(--transition-fast);
+}
+
+@media (max-width: 1024px) {
+    .mobile-menu-inner {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .mobile-nav-link {
+        text-align: center;
+        width: fit-content;
+    }
+    .mobile-nav-link.active {
+        color: var(--color-accent);
+        font-weight: 700;
+        position: relative;
+        padding-bottom: 5px;
+    }
+    .mobile-nav-link.active::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 30px;
+        height: 3px;
+        background-color: var(--color-accent);
+        border-radius: 2px;
+    }
+}
